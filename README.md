@@ -5,6 +5,7 @@ This project aims to predict hourly, daily, weekly, and monthly energy consumpti
 
 **About**
 It uses Individual Household Electric Power Consumption dataset which you can download from the link below:
+https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
 **Process for training**
  This project uses the IHEPC (Individual Household Electric Power Consumption) dataset to predict energy consumption on an hourly, daily, weekly, and monthly basis. 
