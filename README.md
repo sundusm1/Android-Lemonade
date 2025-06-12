@@ -15,6 +15,7 @@ The implementation is done using NumPy, Pandas, Matplotlib, and Seaborn for data
 
 **Evaluation Method**
 To comprehensively evaluate the performance of our proposed energy consumption prediction model, we employed several standard metrics and performed extensive experiments on publicly accessible dataset: IHEPC
+
 **Datasets**
 IHEPC Dataset: The IHEPC (Individual Household Electric Power Consumption) dataset contains over four years of minute-level measurements of electrical power usage from a single household in France, including variables such as active power, reactive power, voltage, and energy sub-metering.
 
