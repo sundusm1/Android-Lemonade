@@ -1,18 +1,30 @@
 **Title**
-**Deep Learning based Smart Energy Consumption Prediction in Residential Building**
+Deep Learning based Smart Energy Consumption Prediction in Residential Building
 
-**Introduction**
-This project aims to predict hourly, daily, weekly, and monthly energy consumption prediction using the IHEPC dataset with a deep learning-based approach.
+**Description**
+This project aims to predict hourly, daily, weekly, and monthly energy consumption prediction using the IHEPC dataset with a deep learning-based approach. The IHPEC dataset contains consumption data used for predicting and analyzing power usage patterns over time.
 
-**About**
-It uses Individual Household Electric Power Consumption dataset which you can download from the link below:
+**Dataset Information**
+This study uses the Individual Household Electric Power Consumption (IHPEC) dataset, which records minute-level measurements of a single household’s electricity usage; it is available at:
 https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
-**Process for training**
+**Code Information**
+The code performs data preprocessing, feature selection, model training, and evaluation using metrics like MAPE, RMSE, MAE, and MSE to forecast household energy consumption using the ECP-Bidirectional Long Short-Term Memory (ECP-BLSTM) model.
+
+**Usage Instructions**
+To use the dataset, download the IHPEC dataset from the UCI repository and load it using pandas. Run code in a Python environment (Google Colab) after installing the required libraries; it includes data cleaning, feature extraction, model training using ECP-BLSTM, and performance evaluation.
+
+**Requirements**
+The code requires Python along with the following libraries: pandas, numpy, matplotlib, scikit-learn, and TensorFlow (or Keras) for implementing the ECP-BLSTM model.
+
+**Methodology**
  This project uses the IHEPC (Individual Household Electric Power Consumption) dataset to predict energy consumption on an hourly, daily, weekly, and monthly basis. 
 The first two years of data are used for training, while the last two years are reserved for testing. 
 A Bidirectional LSTM (BLSTM) model is employed to capture temporal dependencies in consumption patterns. 
 The implementation is done using NumPy, Pandas, Matplotlib, and Seaborn for data handling, model evaluation, and visualization.
+
+**Materials & Methods**
+The code was developed and tested on a Windows 10 operating system with 12GB RAM and an Intel Core i5 processor, using Python. The code repository is available at
 
 **Evaluation Method**
 To comprehensively evaluate the performance of our proposed energy consumption prediction model, we employed several standard metrics and performed extensive experiments on publicly accessible dataset: IHEPC
