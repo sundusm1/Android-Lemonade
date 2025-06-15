@@ -1,4 +1,5 @@
-** Title Deep Learning based Smart Energy Consumption Prediction in Residential Building**
+**Title**
+**Deep Learning based Smart Energy Consumption Prediction in Residential Building**
 
 **Introduction**
 This project aims to predict hourly, daily, weekly, and monthly energy consumption prediction using the IHEPC dataset with a deep learning-based approach.
