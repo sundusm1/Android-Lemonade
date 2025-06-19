@@ -15,6 +15,10 @@ The code performs data preprocessing, feature selection, model training, and eva
 **Usage Instructions**
 To use the dataset, download the IHPEC dataset from the UCI repository and load it using pandas. Run code in a Python environment (Google Colab) after installing the required libraries; it includes data cleaning, feature extraction, model training using ECP-BLSTM, and performance evaluation.
 
+**Reproducibility**
+Bidirectional Long Short-Term Memory (BLSTM) neural network is implemented to predict energy consumption using historical time-series data. The BLSTM model effectively captures temporal dependencies in both forward and backward directions. The algorithm was developed using Python with Keras for training and evaluation.
+The algorithm begins with preprocessing the IHEPC energy dataset by cleaning, analyzing, filling nulls, and balancing it to prepare input features (x) and target values (y). In the second step, the data is split into training and testing sets, and a Bidirectional LSTM (BLSTM) model is created and trained on the training set. The model is then validated using the test set. Finally, in the prediction step, the trained model forecasts energy consumption, and evaluation metrics such as RMSE, MSE, MAE, and MAPE are computed to assess performance.
+
 **Requirements**
 The code requires Python along with the following libraries: pandas, numpy, matplotlib, scikit-learn, and TensorFlow (or Keras) for implementing the ECP-BLSTM model.
 
@@ -27,7 +31,13 @@ The implementation is done using NumPy, Pandas, Matplotlib, and Seaborn for data
 
 **Materials & Methods**
 The code was developed and tested on a Windows 10 operating system with 12GB RAM and an Intel Core i5 processor, using Python. The code repository is available at
-https://github.com/sundusm1/Android-Lemonade/blob/main/Electric_Power_Consumption(2).ipynb
+https://github.com/sundusm1/Android-Lemonade/blob/main/Electric_Power_Consumption(2).ipynb. 
+
+The following metrics were used to evaluate the performance of the models:
+MAPE (Mean Absolute Percentage Error): Measures the average percentage difference between predicted and actual values.
+RMSE (Root Mean Squared Error): Calculates the square root of the average squared differences between predictions and actual values, giving more weight to large errors.
+MAE (Mean Absolute Error): Computes the average of absolute differences between predicted and actual values.
+MSE (Mean Squared Error): Calculates the average of squared differences between predicted and actual values, highlighting error magnitude.
 
 **Evaluation Method**
 The proposed ECP-BLSTM model was evaluated using Comparative Evaluation with State-of-the-Art Models, including LSTM, CNN, Seq2Seq, and others, based on performance metrics such as MAPE, RMSE, MAE, and MSE.
@@ -42,7 +52,7 @@ MSE (Mean Squared Error): Calculates the average of squared differences between 
 **Conclusions**
 The ECP-BLSTM model outperformed traditional models such as LSTM, CNN, and Seq2Seq in forecasting household energy consumption, demonstrating lower error rates across evaluation metrics and proving its effectiveness for time-series energy prediction tasks.
 
-**Limitations**
+**Limitations** 
 The study is limited to a single-household dataset, which may affect the generalizability of the model; additionally, the model's performance has not been evaluated under real-time deployment or on multi-household or cross-regional datasets.
 
 
